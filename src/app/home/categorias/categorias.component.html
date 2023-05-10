@@ -1,0 +1,11 @@
+<h1 class="categorias">Categoria</h1>
+<div class="contenedor">
+    <div class="card"  *ngFor="let article of lista_categoria" >
+        <a [routerLink]="['/articulos']" [queryParams]="{ id: article.getId() }">
+          <img class="card-img-top" src={{article.getImagen()}} alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">{{article.getNombre()}}</p>
+          </div>
+        </a>
+      </div>
+</div>

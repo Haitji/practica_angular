@@ -1,0 +1,17 @@
+.banners {
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 20px;;
+}
+.card{
+    width: 40rem;
+    height: 30rem;
+    margin: 20px;
+}
+.card-img-top{
+    height: 480px;
+}

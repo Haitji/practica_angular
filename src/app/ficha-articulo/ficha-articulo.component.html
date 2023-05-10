@@ -1,0 +1,16 @@
+
+<div class="contenedor" *ngIf="fichaArticulo">
+    <div class="izquierda">
+        <img class="imagen-principal" src={{fichaArticulo.getImagen()}} alt="Card image cap">
+    </div>
+    <div class="derecha">
+        <p class="titulo">{{fichaArticulo.getNombre()}}</p>
+        <p class="precio">Precio: ${{fichaArticulo.getPrecio()| conversorPrecio}}</p>
+        <p class="subtitulo">color: {{fichaArticulo.getColor()}}</p>
+        <img class="imagen-pequeña" src={{fichaArticulo.getImagen()}} alt="Card image cap">
+        <p class="subtitulo">Size</p>
+        <div class="contenedor-tallas">
+            <div class="tallas" *ngFor="let item of tallas; let i=index" [ngClass]="tallasDisponibles[i] ? 'tallas' : 'tallas-no'">{{item}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+.contenedor{
+    width: 95%;
+    
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+.izquierda{
+    width: 38%;
+    
+    height: 1000px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.derecha{
+    width: 60%;
+    background-color: rgba(10, 160, 184, 0.6);
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.imagen-principal{
+    width: 100%;
+    height: 79%;
+    border: 1px solid black;
+}
+
+.imagen-pequeña{
+    width: 180px;
+    height: 180px;
+}
+.contenedor-tallas{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tallas{
+    margin: 20px;
+    width: 100px;
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+    font-size:23px;
+    display: flex;
+    justify-content: center;
+}
+.tallas-no{
+    margin: 20px;
+    width: 100px;
+    border: 1px solid black;
+    height: 50px;
+    text-decoration: line-through;
+    text-align: center;
+    font-size:23px;
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    font-size: 60px
+}
+.precio{
+    font-size: 40px
+}
+.subtitulo{
+    font-size:30px;
+    font-weight: bold;
+}

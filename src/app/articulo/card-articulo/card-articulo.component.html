@@ -1,0 +1,15 @@
+<div class="card" *ngIf="article">
+    <a class="navegar" [routerLink]="['/ficha']" [queryParams]="{ id: article.getId() }">
+        <img src={{article.getImagen()}} class="card-img-top" alt="...">
+       
+        <div class="card-body">
+            <h5 class="card-title">{{article.getNombre()}}</h5>
+            <p [ngClass]="descuento ? 'tachado' : 'normal'">${{ article.getPrecio() | conversorPrecio}}</p>
+            <p class="normal" *ngIf="descuento">${{article.getPrecioDescuento() | conversorPrecio}}</p>
+            
+        </div>
+    </a>
+    <div class="icono">
+        <i class="{{article.getFavorito() ? 'fa-solid fa-heart no':'fa-regular fa-heart no'}}" ></i>
+    </div>
+</div>
