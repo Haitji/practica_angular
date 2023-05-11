@@ -10,6 +10,7 @@ import { FichaArticuloComponent } from './ficha-articulo/ficha-articulo.componen
 import { ConversorPrecioPipe } from './pipes/conversor-precio.pipe';
 import { CardArticuloComponent } from './articulo/card-articulo/card-articulo.component';
 import { ListArticuloComponent } from './articulo/list-articulo/list-articulo.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ListArticuloComponent } from './articulo/list-articulo/list-articulo.co
     FichaArticuloComponent,
     ConversorPrecioPipe,
     CardArticuloComponent,
-    ListArticuloComponent
+    ListArticuloComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
